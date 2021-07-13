@@ -1,0 +1,35 @@
+[package]
+name = "gitmanager"
+version = "0.0.0"
+authors = ["Fahmi Akbar Wildana <sensorfied@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+## Interaction ##
+inquire = "*"
+# indicatif = "*"
+clap = "3.0.0-beta.*"
+clap_derive = "3.0.0-beta.*"
+
+## Essentials ##
+gpgme = "*"
+git-config = "*" # part of gitoxide
+# configparser = "*" # generic INI parser (in case git-config not sufficient)
+which = "*"
+# log = "*"
+# directories = "*"
+# tempfile = "*"
+
+## Error handling ##
+# # ctrlc = "*"     # only handle SIGINT
+# signal-hook = "*" # handle all Unix signals
+# exitcode = "*"
+# human-panic = "*"
+
+## Remote Service integration ## e.g github, gitlab, sourcehut, ...
+# reqwest = "*"
+# wasmer = "*" # integration are packaged as WASM plugins
+
+[dev-dependencies]
+# proptest = "*"
+
